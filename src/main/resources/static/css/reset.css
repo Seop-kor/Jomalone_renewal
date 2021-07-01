@@ -1,0 +1,14 @@
+@import url('/font/NanumBarunGothic.ttf');
+@import url('/font/NanumBarunGothicBold.ttf');
+@import url('/font/NanumBarunGothicLight.ttf');
+@import url('/font/NanumBarunGothicUltraLight.ttf');
+@import url('/font/LucidaGrande.ttf');
+@import url('/font/LucidaGrandeBold.ttf');
+
+/* Reset CSS code */
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+a { text-decoration: none; color: #000; } 
+ol, ul { list-style: none; } 
+img { display: block; } 
+input, button, textarea { outline: 0; } 
+body { font-family: 'Lucida Grande', 'NanumBarunGothic', Helvetica, Arial, sans-serif; color: #000; font-size: 14px; } 

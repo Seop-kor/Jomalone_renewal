@@ -1,0 +1,86 @@
+@media (max-width: 1280px){
+  #product-detail .product-detail-information .product-info > div > p { padding: 0 15px; }
+}
+
+@media (max-width: 1080px) {
+  /* 공식인증 마크 */
+  #header-menu .header-bottom nav > div:nth-child(2) {display: none;}
+  #contents .center {width: 100%;}
+  #header-menu .header-bottom nav li { font-size: 12px; z-index: 10; }
+  #header-menu .header-bottom nav #gnb > li:hover .one-deps { animation: moveDown300 0.8s 1 ease-in-out; animation-fill-mode: forwards; }
+  #header-menu .header-bottom nav #gnb > li:hover .one-deps.new-product {animation: moveDown250 0.8s 1 ease-in-out; animation-fill-mode: forwards;}
+  #header-menu .header-bottom nav .new-product .content h2 {font-size: 14px;}
+  #header-menu .header-bottom nav .one-deps .center { width: 60%; }
+  #header-menu .header-bottom nav .pregrence .center li, 
+  #header-menu .header-bottom nav .bath .center li, 
+  #header-menu .header-bottom nav .home-preg .center li {font-size: 10px;}
+  #header-menu .header-bottom nav .pregrence .center ul, 
+  #header-menu .header-bottom nav .bath .center ul, 
+  #header-menu .header-bottom nav .home-preg .center ul {padding: 5px 0;}
+
+  #header-menu .header-bottom nav #gnb > li:hover .one-deps.best-seller, 
+  #header-menu .header-bottom nav #gnb > li:hover .one-deps.gift, 
+  #header-menu .header-bottom nav #gnb > li:hover .one-deps.manz { animation: moveDown50 0.8s 1 ease-in-out; animation-fill-mode: forwards; }
+  #header-menu .header-bottom nav .best-seller li, 
+  #header-menu .header-bottom nav .gift li, 
+  #header-menu .header-bottom nav .manz li {font-size: 10px;}
+
+  #header-menu .header-bottom nav .new-product .content img { height: 65%; }
+  /* 양쪽 리본 줄이기 */
+  #header-menu .ribbon {width: 166px; }
+  footer .ribbon {width: 96px;}
+
+  footer .footer-top span:nth-child(3) { z-index: 10; }
+
+  /* Detail View Style Code */
+  #product-detail .product-detail-information .product-info > div {padding: 0;}
+
+  /* Product List Style Code */
+  #product-list .product-list-wrapper .center {width: 80%;}
+}
+
+@media (max-width: 768px){
+  #header-menu .ribbon {display: none;}
+  footer .ribbon {display: none;}
+  #contents .center {justify-content: center;}
+  #contents .div-half { width: 90%; }
+  footer .footer-top span:nth-child(3) { display: none; }
+  #header-menu .header-bottom nav .new-product .content p { display: none; }
+  #header-menu .header-bottom nav .new-product .content h2 { font-size: 12px; }
+
+  /* Detail View Style Code */
+  #product-detail .product-detail-information .center {flex-direction: column;}
+  #product-detail .product-detail-information .center > div {width: 100%;}
+  #product-detail .product-detail-information .product-info > div { padding: 20px 40px; }
+  #product-detail .product-detail-information .product-info .pd-name,
+  #product-detail .product-detail-information .product-info #volumn,
+  #product-detail .product-detail-information .product-info > div > p {margin-bottom: 20px;}
+  #product-detail .product-detail-information .product-info > div > p {padding: 0 30px; }
+  #product-detail .notes {flex-direction: column; align-items: center; padding: 40px 0;}
+  #product-detail .notes > div {width: 60%;}
+  #product-detail .notes > div p {padding: 20px 0; }
+  #product-detail .special {padding: 5% 0;}
+  #product-detail .special .center > div {flex-direction: column;}
+  #product-detail .special .center .co {width: 100%; margin-bottom: 20px;}
+
+  /* Product List Style Code */
+  #product-list .product-list-wrapper .product {width: calc(50% - 20px);}
+}
+
+@media (max-width: 650px){
+  #header-menu .header-top { display: none; }
+  #header-menu .header-bottom nav ul { display: none; }
+  #header-menu .header-bottom nav .left .mobile-menu { display: block; }
+  footer .footer-top { display: none; }
+
+  /* Detail View Style Code */
+  #product-detail {padding: 30px 0;}
+  #product-detail > .center {width: 85%;}
+  #product-detail .product-detail-information .product-info > div {padding: 0;}
+  #product-detail .notes {padding: 20px 0;}
+  #product-detail .notes > div {width: 80%;}
+  #product-detail .special .center {width: 80%;}
+  #product-detail .special .center > div {padding: 0;}
+  /* Product List Style Code */
+  #product-list .product-list-wrapper .product {width: 100%; margin-bottom: 25px;}
+}

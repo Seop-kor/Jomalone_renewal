@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form action="/insert.do" method="post">
+     <input type="text" placeholder="name" name="name">
+     <input type="text" placeholder="name_en" name="name_en">
+     <input type="number" placeholder="volume" name="volume">
+     <input type="number" placeholder="price" name="price">
+     <textarea placeholder="infomation" name="infomation"></textarea>
+     <input type="text" placeholder="imgurl" name="imgurl">
+     <button type="submit">제출</button>
+ </form>
+<button type="button" class="ddd">누르세요</button>
+<script>
+    document.querySelector(".ddd").addEventListener('click', function (){
+        const xml = new XMLHttpRequest();
+        xml.addEventListener('load', function (){
+            console.log(JSON.parse(xml.responseText));
+        });
+        xml.open("GET", "/test");
+        xml.send();
+    });
+</script>
+</body>
+</html>

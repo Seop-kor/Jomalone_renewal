@@ -1,0 +1,90 @@
+@keyframes moveDown{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 400px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveDown300{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveDown250{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 250px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveDown200{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 200px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveDown100{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 100px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveDown70{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveDown50{
+  from{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to{
+    height: 50px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
