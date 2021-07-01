@@ -46,7 +46,7 @@ function productDetailLoadAction(){
   const value = getParameterByName('id');
   const xml = new XMLHttpRequest();
   xml.addEventListener('load', fetchData);
-  xml.open("GET", "/detail/data/" + value);
+  xml.open("GET", "/renewal/detail/data/" + value);
   xml.send();
 }
 
@@ -102,7 +102,7 @@ function handCreamList(){
   }
   const xml = new XMLHttpRequest();
   xml.addEventListener('load', fetchData);
-  xml.open("GET", "/handcream/data");
+  xml.open("GET", "/renewal/handcream/data");
   xml.send();
 }
 
@@ -158,7 +158,7 @@ function candleList(){
   }
   const xml = new XMLHttpRequest();
   xml.addEventListener('load', fetchData);
-  xml.open("GET", "/townhome/data");
+  xml.open("GET", "/renewal/handcream/data");
   xml.send();
 }
 

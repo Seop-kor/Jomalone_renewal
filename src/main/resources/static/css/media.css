@@ -83,4 +83,6 @@
   #product-detail .special .center > div {padding: 0;}
   /* Product List Style Code */
   #product-list .product-list-wrapper .product {width: 100%; margin-bottom: 25px;}
+
+  footer {position: static;}
 }
