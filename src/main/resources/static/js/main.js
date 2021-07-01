@@ -5,6 +5,43 @@ function getParameterByName(name) {
   return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+function eventSlide(){
+  let slideIdx = 0;
+  const slides = document.querySelectorAll("#event-bar .slide-contents span");
+  function showSlide(n){
+    if(n > slides.length - 1){
+      slideIdx = 0;
+    }
+    if(n < 0){
+      slideIdx = slides.length - 1;
+    }
+    for(let i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+    }
+    slides[n].style.display = "block";
+  }
+  showSlide(0);
+  document.querySelector("#event-bar .prev").addEventListener('click', function (){
+    showSlide((slideIdx -= 1) % slides.length);
+  });
+  document.querySelector("#event-bar .next").addEventListener('click', function (){
+    showSlide((slideIdx += 1) % slides.length);
+  });
+
+  function autoSlide(){
+    clearSet = setInterval(function(){
+      showSlide((slideIdx += 1) % slides.length);
+    }, 5000);
+  }
+  autoSlide();
+  document.querySelector("#event-bar").addEventListener('mouseover',function (){
+    clearInterval(clearSet);
+  });
+  document.querySelector("#event-bar").addEventListener('mouseout',function (){
+    autoSlide();
+  });
+}
+
 function mobileMenu(){
   document.querySelector(".mobile-menu").addEventListener('click' ,function(){
     this.classList.toggle("active");

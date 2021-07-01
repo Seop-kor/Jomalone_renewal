@@ -1,10 +1,14 @@
 .wrapper { width: 100%; _overflow: hidden; }
 header { width: 100%; display: flex; background: #fff; }
-#event-bar { justify-content: space-between; background: black; padding: 10px 15px; }
+#event-bar { justify-content: space-between; align-items: center; background: black; padding: 10px 15px; }
 #event-bar span, #event-bar .slide-contents { color: #fff; }
-#event-bar .slide-contents { overflow: hidden; width: 100%; position: relative; height: auto; }
-#event-bar .slide-contents .list { display: flex; width: 300%; position: absolute; top: 0; left: 0; }
-#event-bar .slide-contents .list > span { width: 100%; display: inline-block; text-align: center; }
+/*#event-bar .slide-contents { overflow: hidden; width: 100%; position: relative; height: auto; }*/
+/*#event-bar .slide-contents .list { display: flex; width: 300%; position: absolute; top: 0; left: 0; }*/
+/*#event-bar .slide-contents .list > span { width: 100%; display: inline-block; text-align: center; }*/
+#event-bar .prev ,
+#event-bar .next {height: 100%; cursor: pointer;}
+#event-bar .slide-contents { width: 100%; position: relative; height: auto; }
+#event-bar .slide-contents > span { width: 100%; display: inline-block; text-align: center; animation: fade 1.5s; }
 #header-menu { width: 100%; flex-direction: column; position: sticky; transition: all 0.4s; top: 0; left: 0; z-index: 10; }
 #header-menu .header-top { display: flex; justify-content: flex-end; }
 #header-menu .header-top ul { display: flex; padding: 5px 10px; align-items: center; font-size: 12px; }

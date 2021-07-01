@@ -25,7 +25,7 @@ function eventHeaderSlide() {
     clearSet = setInterval(function(){
       rightFn();
     }, 5000);
-  };
+  }
   autoSlide();
 
   $("#event-bar .prev").on('click', function(){

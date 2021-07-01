@@ -1,3 +1,12 @@
+@keyframes fade {
+  from{
+    opacity: 0.4;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 @keyframes moveDown{
   from{
     height: 0px;
