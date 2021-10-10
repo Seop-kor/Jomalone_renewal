@@ -15,8 +15,6 @@
 
 ## Tech
 
----
-
   ### Front
 
   - HTML
